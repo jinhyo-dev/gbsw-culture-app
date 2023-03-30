@@ -1,0 +1,17 @@
+* {
+    margin: 0;
+}
+
+.bar {
+    height: 6rem;
+    width: 100%;
+    background-color: #ccc;
+    position: sticky;
+    top: 0;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.content {
+    font-size: 2rem;
+}
