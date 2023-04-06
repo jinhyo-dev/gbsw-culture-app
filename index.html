@@ -83,5 +83,17 @@
     conversations, all in the service of providing informative, engaging, and, hopefully, useful content to anyone who
     interacts with me.
 </div>
+
+<script>
+	if ('serviceWorker' in navigator) {
+		window.addEventListener('load', () => {
+			navigator.serviceWorker.register('./service-worker.js')
+              .then((reg) => {
+                console.log(`Service worker registered. ${reg}`)
+              })
+              .catch(e => console.log(e))
+        })
+    }
+</script>
 </body>
 </html>
